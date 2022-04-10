@@ -69,8 +69,14 @@ else if (result === "won") {
 };
 };
 
-
-
-console.log(computerPlay())
-console.log(userPlay())
-console.log(playRound(playerSelection , computerSelection))
+function game(){
+console.log(computerPlay());
+console.log(userPlay());
+console.log(playRound(computerSelection, playerSelection))
+for (let i = 0; i < 5; i++) {
+    console.log(i)
+    
+}
+    
+}
+console.log(game())
