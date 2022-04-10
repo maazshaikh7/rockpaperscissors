@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/f19b25fb2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Javascript</h1>
+    <div class="wrapper" id="blur">
+        <header>
+            <h1>ROCK PAPER SCISSORS</h1>
+        </header>
+        <div class="score-div">
+            <div id="score-cards">
+                <div class="score-card">
+                    <p>PLAYER: <strong id="player-score">0</strong></p>
+                    <i id="player-choice"></i>
+                </div>
+                <div class="score-card">
+                    <p>COMPUTER: <strong id="computer-score">0</strong></p>
+                    <i id="computer-choice"></i>
+                </div>
+            </div>
+            <p id="round-result"></p>
+        </div>
+        <div class="choice-div">
+            <i class="far fa-hand-rock" id="rock-button"></i>
+            <i class="far fa-hand-paper" id="paper-button"></i>
+            <i class="far fa-hand-scissors" id="scissors-button"></i>
+        </div>
+        <footer>
+            <p>Copyright  <span>&copy</span>  Maaz <a href="https://github.com/maazshaikh7" target="_blank"><i class="fab fa-github"></i></a></p>
+        </footer>
+    </div>
+    <div id="popup">
+        <h1 id="game-result"></h1>
+        <a href="#" onclick="blurAndPopup()" id="restart-button">RESTART</a>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
