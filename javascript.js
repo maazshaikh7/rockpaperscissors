@@ -7,8 +7,7 @@ function computerHand() {
   return variables[Math.floor(Math.random() * variables.length)];
 }
 
-
-//
+//Game logic for playing a round
 function playRound(playerChoice, computerChoice) {
   if (playerScore < 5 && computerScore < 5) {
     if (playerChoice == "rock") {
@@ -70,7 +69,6 @@ function playRound(playerChoice, computerChoice) {
   }
 }
 
-
 function blurAndPopup() {
   let blur = document.querySelector(".wrapper");
   blur.classList.toggle("active");
@@ -98,6 +96,7 @@ function blurAndPopup() {
     playerChoiceIcon.className = "";
   });
 }
+
 const playerChoiceIcon = document.querySelector("#player-choice");
 const computerChoiceIcon = document.querySelector("#computer-choice");
 const roundResult = document.querySelector("#round-result");
